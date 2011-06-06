@@ -1,0 +1,10 @@
+A simple tool to send ARP replies in Windows. Requires WinPcap to be installed. To build, expects the WinPcap dev pack to be at ..\WdpPack.
+
+Run without arguments to print out available devices.
+
+Usage: send_arp <device> <src mac> <dst mac> <sender mac> <target mac> <sender ip> <target ip>
+
+For example, to send a gratuitious ARP for 192.168.1.3 at address aa:bb:cc:dd:ee:ff:
+
+send_arp \Device\NPF_{guid} aabbccddeeff ffffffffffff aabbccddeeff aabbccddeeff 192.168.1.3 192.168.1.3
+
